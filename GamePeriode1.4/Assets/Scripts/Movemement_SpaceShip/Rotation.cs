@@ -19,6 +19,6 @@ public class Rotation : MonoBehaviour
     {
         mouseX += Input.GetAxis("Mouse X") * sensitivity;
         mouseY += Input.GetAxis("Mouse Y") * sensitivity;
-        transform.eulerAngles = new Vector3(0, mouseX, 0);
+        transform.eulerAngles = new Vector3(-mouseY, mouseX, 0);
     }
 }
