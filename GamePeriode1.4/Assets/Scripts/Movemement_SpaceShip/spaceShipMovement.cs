@@ -6,11 +6,7 @@ using UnityEngine;
 public class spaceShipMovement : MonoBehaviour
 {
     public float speed = 5;
-    // Start is called before the first frame update
-    void Start()
-    {
-        transform.position =new Vector3(0,0,0);
-    }
+    public float rotSpeed = 40f;
 
     // Update is called once per frame
     void Update()
@@ -29,7 +25,7 @@ public class spaceShipMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.Translate(0, 0, -speed * Time.deltaTime);
+            this.transform.Translate(0, 0, speed * Time.deltaTime);
         }
     }
 }

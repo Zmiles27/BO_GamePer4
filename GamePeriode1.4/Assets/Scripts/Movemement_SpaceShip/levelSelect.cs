@@ -12,6 +12,7 @@ public class levelSelect : MonoBehaviour
     {
         text.enabled = false;
         touchingPlanet1Trigger = false;
+        transform.position = new Vector3(0, 0, 0);
     }
     private void Update()
     {
