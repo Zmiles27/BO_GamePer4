@@ -350,6 +350,7 @@
 "Assets/Scripts/MovementMainCharacter/cam.cs"
 "Assets/Scripts/MovementMainCharacter/movement.cs"
 "Assets/Scripts/MovementMainCharacter/wallrun.cs"
+"Assets/Scripts/otherstuf/timer.cs"
 -langversion:9.0
 
 /deterministic
