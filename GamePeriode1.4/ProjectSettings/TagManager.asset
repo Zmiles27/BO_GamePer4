@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - planet1
+  - bouncePad
   layers:
   - Default
   - TransparentFX
