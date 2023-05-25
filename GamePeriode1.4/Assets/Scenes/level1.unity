@@ -521,7 +521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -435, y: 175}
+  m_AnchoredPosition: {x: -760, y: 396}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082554708
@@ -805,8 +805,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.51508975, z: 1}
-  m_Center: {x: 0, y: 0.028616667, z: 0}
+  m_Size: {x: 1, y: 1.1546006, z: 1}
+  m_Center: {x: 0, y: 0.34837207, z: 0}
 --- !u!1 &1989022691
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ MonoBehaviour:
   maxSlopeAngle: 35
   slideForce: 400
   slideCounterMovement: 0.2
-  jumpForce: 100
+  jumpForce: 200
 --- !u!23 &1989022695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -988,6 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpHight: 5
+  rb: {fileID: 1989022698}
 --- !u!1 &1993253765
 GameObject:
   m_ObjectHideFlags: 0

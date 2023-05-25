@@ -4,13 +4,32 @@ using UnityEngine;
 
 public class jumpPad : MonoBehaviour
 {
-    public float jumpHight = 5f;
+    public float jumpHight = 20f;
+    public Rigidbody rb;
+    bool touchingTrigger = false;
 
+    private void Update()
+    {
+        if (touchingTrigger == true)
+        {
+            rb.AddForce(Vector3.up * jumpHight);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "bouncePad")
         {
-            this.transform.Translate(jumpHight * Time.deltaTime, 0, 0);
+            Debug.Log("test");
+            touchingTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "bouncePad")
+        {
+            Debug.Log("test");
+            touchingTrigger = false;
         }
     }
 }
